@@ -10,7 +10,21 @@ namespace CSharpConsoleApp1
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World");
+            TestClass tc = new TestClass();
+            tc.PrintEverything();
         }
     }
+
+    class TestClass
+    {
+        string hw = "HelloWorld";
+
+        public void PrintEverything()
+        {
+            Console.WriteLine(hw);
+        }
+    }
+
+
+
 }
