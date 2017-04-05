@@ -24,4 +24,25 @@ the common language runtime does not support types outside of assemblies.
 Each time you create a Microsoft Windows® Application, Windows Service, Class Library, or other application with 
 Visual Basic .NET, you're building a single assembly. 
 Each assembly is stored as an .exe or .dll file.
+
+## Variables / Constants
+```
+int number;
+
+int Number = 1;
+
+const float pi = 3.14f;
+
+```
+- For local variables: Camel Case `int numberOne;`
+- For Constant: Pascal Case `const int MaxZoom = 5;`
  
+## Structs
+- Structure
+- Similar to Abstract Class
+- Structs are value types and classes are reference types.
+- value types always contains a value
+- reference types can contain a null-reference, meaning that they don't refer to anything at all at the moment
+- When you declare variables or fields, here's how the two types differ:
+  - variable: value type lives on the stack, reference type lives on the stack as a pointer to somewhere in heap memory where the actual memory lives (though note Eric Lipperts article series: The Stack Is An Implementation Detail.)
+  - class/struct-field: value type lives completely inside the type, reference type lives inside the type as a pointer to somewhere in heap memory where the actual memory lives.
